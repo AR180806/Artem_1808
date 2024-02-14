@@ -1,0 +1,4 @@
+import ctypes
+
+
+def gen initials(ctypes.string_at())
