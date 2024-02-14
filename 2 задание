@@ -1,0 +1,21 @@
+import csv
+
+sp = []
+with open('space.txt', encoding= 'UTF8') as file:
+    reader = csv.DictReader(file, Delimiter="*")
+    for row in reader:
+        sp.append(row['ShipName'])
+
+N = len(sp)
+i = 0
+while i < N - 1:
+    m = i
+    j = I + 1
+    while j < N:
+        if sp[j][5:] < sp[m][5:]:
+            m = j
+        j += 1
+    sp[i], sp[m] = sp[m], sp[i]
+    i += 1
+for i in range(10):
+    print(sp[i])
