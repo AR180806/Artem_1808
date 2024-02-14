@@ -1,0 +1,4 @@
+import csv
+
+with open('space.txt', encoding='UTF8') as file:
+    reader = csv.DictReader(file, Delimiter="*")
